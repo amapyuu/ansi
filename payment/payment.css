@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #fff;
+  color: #1c1c1c;
+  padding-top: 70px;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 999;
+  border-bottom: 1px solid #dcdcdc;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.navbar-content {
+  align-items: center;
+  padding: 5px 10%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo img {
+  height: 80px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 70px;
+  align-items: center;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #1c1c1c;
+  font-weight: 500;
+  position: relative;
+  font-size: 15px;
+}
+
+.nav-links a img {
+  height: 20px;
+  filter: grayscale(100%) brightness(0.6);
+}
+
+.nav-links a:hover {
+  color: #0089d4;
+}
+
+.nav-links a.active {
+  color: #008bd8;
+  font-weight: 600;
+}
+
+.nav-links a.active::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #008bd8;
+}
+
+.payment-section {
+  padding: 40px;
+}
+
+.payment-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  background: #f5f5f5;
+  padding: 40px;
+  border-radius: 12px;
+}
+
+.program-details {
+  display: flex;
+  gap: 20px;
+  flex: 1;
+}
+
+.program-img {
+  width: 180px;
+  height: auto;
+  border-radius: 12px;
+}
+
+.program-info h2 {
+  color: #0075c4;
+  font-weight: 700;
+  margin: 0 0 16px 0;
+}
+
+.program-info p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.program-info .price {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.payment-summary {
+  width: 280px;
+  background-color: #f1f1f1;
+  padding: 24px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.summary-info .row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.buy-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+.btn-buy {
+  background-color: #ff2c91;
+  color: white;
+  padding: 12px 32px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}

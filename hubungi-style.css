@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #fff;
+  color: #1c1c1c;
+  padding-top: 70px;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 999;
+  border-bottom: 1px solid #dcdcdc;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.navbar-content {
+  align-items: center;
+  padding: 5px 10%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar-content img {
+  cursor: pointer;
+}
+
+.logo img {
+  height: 80px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 70px;
+  align-items: center;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #1c1c1c;
+  font-weight: 500;
+  position: relative;
+  font-size: 15px;
+}
+
+.nav-links a img {
+  height: 20px;
+  filter: grayscale(100%) brightness(0.6);
+}
+
+.nav-links a:hover {
+  color: #0089d4;
+}
+
+.nav-links a.active {
+  color: #008bd8;
+  font-weight: 600;
+}
+
+.nav-links a.active::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #008bd8;
+}
+
+section {
+  padding: 80px 10%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.form-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 10%;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.form-section {
+  flex: 1;
+  min-width: 350px;
+  max-width: 600px;
+}
+
+.form-section h1 {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.form-section h1 span {
+  color: #1c1c1c;
+}
+
+.form-section h1 strong {
+  color: #ff3c8a;
+}
+
+.form-section p {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #4a4a4a;
+  line-height: 1.6;
+}
+
+form {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+select {
+  padding: 14px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+}
+
+select {
+  appearance: none;
+  background-color: #fff;
+}
+
+button {
+  padding: 14px;
+  background-color: #ff3c8a;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #ff0066;
+}
+
+.contact-info {
+  margin-top: 40px;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.info .label {
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 2px;
+  color: #1c1c1c;
+}
+
+.map-section {
+  margin-top: 70px;
+  flex: 1;
+  min-width: 350px;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.map-section img {
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+  display: block;
+  border-radius: 10px;
+}

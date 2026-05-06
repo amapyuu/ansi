@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #fff;
+  color: #1c1c1c;
+  padding-top: 70px;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 999;
+  border-bottom: 1px solid #dcdcdc;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.navbar-content {
+  align-items: center;
+  padding: 5px 10%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo img {
+  height: 80px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 70px;
+  align-items: center;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #1c1c1c;
+  font-weight: 500;
+  position: relative;
+  font-size: 15px;
+}
+
+.nav-links a img {
+  height: 20px;
+  filter: grayscale(100%) brightness(0.6);
+}
+
+.nav-links a:hover {
+  color: #0089d4;
+}
+
+.nav-links a.active {
+  color: #008bd8;
+  font-weight: 600;
+}
+
+.nav-links a.active::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #008bd8;
+}
+
+.program-detail {
+  padding: 40px 60px;
+  font-family: "Poppins", sans-serif;
+  background-color: #fff;
+}
+
+.header-banner {
+  background: linear-gradient(to right, #3f86ed, #d46ddf);
+  color: white;
+  padding: 40px 20px;
+  border-radius: 12px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.header-banner h1 {
+  font-size: 3rem;
+  margin-top: 10px;
+}
+
+.program-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.program-image img {
+  max-width: 300px;
+  width: 100%;
+  border-radius: 12px;
+}
+
+.program-description {
+  flex: 1;
+}
+
+.program-description h2 {
+  color: #0075e0;
+  font-weight: 600;
+}
+
+.program-description p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.price-facility h2 {
+  color: #0075e0;
+  margin-bottom: 20px;
+}
+
+.price-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  flex: 1;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.card h3 {
+  margin-bottom: 10px;
+}
+
+.card ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.cta-button {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.btn-reservasi {
+  display: inline-block;
+  background: #ff3e7f;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.btn-reservasi:hover {
+  background: #e83270;
+}

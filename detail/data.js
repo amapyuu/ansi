@@ -1,0 +1,40 @@
+const programData = {
+  "3d-printing": {
+    title: "3D Printing",
+    image: "../assets/3dprint.png",
+    name: "3D PRINTING",
+    description: ["Belajar mencetak objek nyata dari desain digital menggunakan printer 3D.", "Anak-anak akan membuat desain mereka sendiri dan mencetaknya jadi objek nyata."],
+    price: "Rp. 40000 / Sesi",
+    duration: "2 Jam",
+    facilities: ["Alat & bahan 3D Printing", "Bimbingan mentor", "Hasil karya dibawa pulang"],
+  },
+  programmer: {
+    title: "Programmer Cilik",
+    image: "../assets/programmer.png",
+    name: "PROGRAMMER",
+    description: ["Mengajarkan logika pemrograman kepada anak-anak dengan cara yang menyenangkan.", "Gunakan alat visual seperti Scratch dan Blockly."],
+    price: "30000",
+    duration: "1.5 Jam",
+    facilities: ["Laptop disediakan", "Modul coding visual", "Mentor profesional"],
+  },
+  sablon: {
+    title: "Sablon",
+    image: "../assets/sablon.png",
+    name: "SABLON",
+    description: ["Ekspresikan dirimu melalui karya kaos. Tunjukkan kreativitasmu yang mencerminkan dirimu."],
+    price: "30000",
+    duration: "2 Jam",
+    facilities: ["Alat Sablon", "Designer App", "Karya dibawa pulang"],
+  },
+  aci: {
+    title: "Aku Cinta Indonesia",
+    image: "../assets/AACI.png",
+    name: "ACI",
+    description: [
+      "Aku Cinta Indonesia adalah program unggulan kidsnesia yang mana nantinya anak anak akan menggunakan pakaian adat yang udah disediakan dan mereka bakalan melakukan berbagai aktifitas edukasi mengenai budaya. Contohnya bakalan ada cerita menggunakan media interaktif petualangan nusantara, game edukasi budaya, VR Rumah adat, dan bakalan ada photobooth nya juga gitu",
+    ],
+    price: "10000",
+    duration: "2 Jam",
+    facilities: ["VR", "Photobooth", "Pakaian Adat"],
+  },
+};

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kidsnesia - Beranda</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="program.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="navbar">
+        <div class="navbar-content">
+          <div class="logo">
+            <a href="index.html"><img src="assets/Logo.png" alt="Logo Kidsnesia" /></a>
+          </div>
+          <nav class="nav-links">
+            <a href="index.html">Beranda</a>
+            <a href="program.html" class="active">Program</a>
+            <a href="hubungi.html">Hubungi</a>
+            <a href="#">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#1c1c1c"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-circle-user-round-icon lucide-circle-user-round"
+              >
+                <path d="M18 20a6 6 0 0 0-12 0" />
+                <circle cx="12" cy="10" r="4" />
+                <circle cx="12" cy="12" r="10" />
+              </svg>
+            </a>
+          </nav>
+        </div>
+      </header>
+
+      <div class="short-border"></div>
+
+      <section class="hero">
+        <div class="text">
+          <h1><span class="highlight">Program Edukasi</span> yang Mengasah Kreativitas dan Pengetahuan Anak</h1>
+          <p>Setiap anak adalah petualang kecil dengan rasa ingin tahu besar. Di Kidsnesia, setiap program dirancang untuk menyalakan rasa ingin tahu anak lewat aktivitas yang interaktif, kreatif, dan menyenangkan</p>
+          <a href="#" class="cta-button">Jelajahi Program</a>
+        </div>
+        <div class="right-content">
+          <img src="assets/ANAK 4.png" alt="Jamet" />
+        </div>
+      </section>
+
+      <section class="section-title">
+        <h2>Temukan Progam Seru di <span>Kidsnesia</span></h2>
+        <p>Yuk, pilih program favorit anak dan lihat mereka tumbuh jadi pribadi kreatif dan cerdas</p>
+      </section>
+
+      <section class="filters">
+        <button data-name="all" class="active">Semua</button>
+        <button data-name="3d-printing">3D Printing</button>
+        <button data-name="programmer">Programmer</button>
+        <button data-name="sablon">Sablon</button>
+        <button data-name="aci">ACI</button>
+        <button data-name="kk">Karya Kidos</button>
+      </section>
+
+      <div class="card-wrapper">
+        <button class="arrow left">&#10094;</button>
+        <section class="cards">
+          <div class="card">
+            <img src="assets/3dprint.png" alt="3D Printing" />
+            <div class="card-content">
+              <h3>3D Printing</h3>
+              <p>Bangun Karakter, Cetak Imajinasi</p>
+              <a href="detail/detail.php?program=3d-printing" class="btn-program">Daftar Sekarang</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="assets/programmer.png" alt="Programmer Cilik" />
+            <div class="card-content">
+              <h3>Programmer Cilik</h3>
+              <p>Belajar Coding Jadi Seru dan Mudah</p>
+              <a href="detail/detail.php?program=programmer" class="btn-program">Daftar Sekarang</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="assets/sablon.png" alt="Sablon" />
+            <div class="card-content">
+              <h3>Karya Sablon</h3>
+              <p>Ekspresikan Diri Lewat Karya Kaos</p>
+              <a href="detail/detail.php?program=sablon" class="btn-program">Daftar Sekarang</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="assets/AACI.png" alt="ACI" />
+            <div class="card-content">
+              <h3>Aku Cinta Indonesia</h3>
+              <p>Kenali Budaya Lewat Aktivitas Seru</p>
+              <a href="detail/detail.php?program=aci" class="btn-program">Daftar Sekarang</a>
+            </div>
+          </div>
+        </section>
+        <button class="arrow right">&#10095;</button>
+      </div>
+
+      <footer>
+        <div class="footer-content">
+          <div class="footer-info">
+            <h3>Wisata Edukasi Kidsnesia</h3>
+            <p>Kidsnesia adalah taman wisata edukasi yang memberikan pengalaman belajar sambil bermain dengan program interaktif berbasis teknologi dan budaya.</p>
+            <div class="social-icons">
+              <a href="#"><i data-feather="facebook"></i></a>
+              <a href="#"><i data-feather="instagram"></i></a>
+              <a href="#"><i data-feather="youtube"></i></a>
+            </div>
+          </div>
+          <div class="footer-links">
+            <div class="quick-links">
+              <h4>Quick Links</h4>
+              <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="program.html">Program</a></li>
+                <li><a href="hubungi.html">Hubungi</a></li>
+              </ul>
+            </div>
+            <div class="program-links">
+              <h4>Program</h4>
+              <ul>
+                <li><a href="detail/detail.php?program=3d-printing">3D Printing</a></li>
+                <li><a href="detail/detail.php?program=sablon">Kreasi Sablon</a></li>
+                <li><a href="detail/detail.php?program=programmer">Programmer Cilik</a></li>
+                <li><a href="detail/detail.php?program=aci">Aku Cinta Indonesia</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/feather-icons"></script>
+  <script>
+    feather.replace();
+    const cards = document.querySelector(".cards");
+    document.querySelector(".arrow.left").addEventListener("click", () => {
+      cards.scrollBy({ left: -800, behavior: "smooth" });
+    });
+    document.querySelector(".arrow.right").addEventListener("click", () => {
+      cards.scrollBy({ left: 800, behavior: "smooth" });
+    });
+  </script>
+</html>
