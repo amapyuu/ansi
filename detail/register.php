@@ -39,9 +39,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                 // Jika ada program, arahkan ke booking
                 if (!empty($program)) {
-                    header("Location: detail/booking.php?program=" . urlencode($program));
+                    header("Location: booking.php?program=" . urlencode($program));
                 } else {
-                    header("Location: index.html");
+                    header("Location: ../user-dashboard.php");
                 }
                 exit;
             } else {

@@ -31,9 +31,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $_SESSION['user_name'] = $user['name'];
             $_SESSION['user_role'] = $user['role'];
 
-            // Redirect ke halaman asal atau beranda
-            $safeRedirect = filter_var($redirect, FILTER_SANITIZE_URL);
-            header("Location: " . $safeRedirect);
+            // Redirect ke dashboard sesuai role
+            if ($user['role'] === 'admin') {
+                header("Location: ../admin-dashboard.php");
+            } else {
+                header("Location: ../user-dashboard.php");
+            }
             exit;
         } else {
             $error = "Email atau kata sandi salah.";

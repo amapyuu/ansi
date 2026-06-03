@@ -1,13 +1,9 @@
 <?php
 session_start();
-require_once '../vendor/autoload.php';
-
-$dotenv = Dotenv\Dotenv::createImmutable(__DIR__ . '/..');
-$dotenv->safeLoad();
 
 // Harus login dulu
 if (!isset($_SESSION['user_id'])) {
-    header("Location: ../login.php?redirect=" . urlencode($_SERVER['REQUEST_URI']));
+    header("Location: login.php?redirect=" . urlencode($_SERVER['REQUEST_URI']));
     exit;
 }
 
@@ -33,6 +29,16 @@ $stmt->bind_param("s", $title);
 $stmt->execute();
 $program = $stmt->get_result()->fetch_assoc();
 $stmt->close();
+
+// Jika program tidak ditemukan di database, gunakan default dari slugMap
+if (!$program) {
+    $program = [
+        'program_id' => 0,
+        'title' => $title,
+        'price' => 30000, // Harga default
+        'description' => 'Program ' . $title
+    ];
+}
 
 $error = '';
 $success = '';

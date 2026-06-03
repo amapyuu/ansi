@@ -155,7 +155,11 @@ $programKey = $_GET['program'] ?? null;
     } else {
       document.querySelector(".program-detail").innerHTML = "<h2>Program tidak ditemukan.</h2>";
     }
-    document.getElementById("btnReservasi").href = "../register.php?program=" + encodeURIComponent(data.name);
+    const btn = document.getElementById("btnReservasi");
+    if (btn && data) {
+      const progKey = programKey || data.title || data.name || '';
+      btn.href = "../register.php?program=" + encodeURIComponent(progKey);
+    }
   </script>
 </body>
 </html>
